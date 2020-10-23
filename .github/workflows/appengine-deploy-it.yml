@@ -6,10 +6,14 @@ on:
     - 'appengine-deploy/**'
     - '.github/workflows/appengine-deploy*'
     - 'setupGcloudSDK/**'
+  pull_request:
+    paths:
+    - 'appengine-deploy/**'
+    - '.github/workflows/appengine-deploy*'
 
 jobs:
   gcloud:
-    name: teste with setup-gcloud
+    name: test with setup-gcloud
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
