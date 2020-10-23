@@ -86,7 +86,7 @@ jobs:
         });
         server.listen(process.env.PORT || 8080);
         EOF
-    - id: build dependency
+    - id: build-dependency
       name: Build dependency
       working-directory: setupGcloudSDK
       run: |-
@@ -139,7 +139,7 @@ jobs:
         });
         server.listen(process.env.PORT || 8080);
         EOF
-    - id: build dependency
+    - id: build-dependency
       name: Build dependency
       working-directory: setupGcloudSDK
       run: |-
