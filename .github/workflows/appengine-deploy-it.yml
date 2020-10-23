@@ -9,7 +9,7 @@ on:
 
 jobs:
   gcloud:
-    name: with setup-gcloud
+    name: teste with setup-gcloud
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
